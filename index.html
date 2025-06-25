@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merch Store - Toko Merchandise Keren</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <div class="mesh-gradient"></div>
+    <div class="particles-bg" id="particles"></div>
+    <!-- ...existing code... -->
+<div class="mesh-gradient"></div>
+<div class="particles-bg" id="particles"></div>
+<div class="floating-shapes">
+    <div class="shape" style="width: 80px; height: 80px; border-radius: 50%;"></div>
+    <div class="shape" style="width: 60px; height: 60px; border-radius: 50%;"></div>
+    <div class="shape" style="width: 100px; height: 100px; border-radius: 50%;"></div>
+    <div class="shape" style="width: 40px; height: 40px; border-radius: 50%;"></div>
+</div>
+<!-- ...existing code... -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Merch Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="hero-title" data-aos="fade-up">
+                        Temukan Merchandise Keren di <span style="color:white">Merch Store</span>
+                    </h1>
+                    <h2 class="hero-profession" data-aos="fade-up" data-aos-delay="200">
+                        Stiker, Acrylic Keychain, Lanyard, dan banyak lagi!
+                    </h2>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                        Koleksi merchandise keren, desain kekinian, kualitas premium. Belanja mudah & aman, siap kirim ke Jogja dan sekitarnya!
+                    </p>
+                    <div class="mt-4" data-aos="fade-up" data-aos-delay="600">
+                        <a href="#produk" class="btn-custom btn-primary-custom">Lihat Produk</a>
+                        <a href="#kontak" class="btn-custom btn-secondary-custom">Hubungi Kami</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center" style="padding-left: 120px;">
+                    <div class="profile-container" data-aos="fade-left" data-aos-delay="400">
+                        <div class="profile-image-container">
+                            <img src="logo.jpg" alt="Etalase Produk" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Product Details -->
+    <!-- Modal Stiker -->
+    <div class="modal fade" id="modalStiker" tabindex="-1" aria-labelledby="modalStikerLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border-radius:20px;">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalStikerLabel">Stiker Custom</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          </div>
+          <div class="modal-body">
+            Stiker hologram tahan air, berbagai karakter, cocok untuk laptop, motor, dan lainnya. Bisa custom desain sesuai keinginan!
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Ganci -->
+    <div class="modal fade" id="modalGanci" tabindex="-1" aria-labelledby="modalGanciLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border-radius:20px;">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalGanciLabel">Acrylic Keychain</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          </div>
+          <div class="modal-body">
+            Gantungan kunci acrylic bening, karakter lucu, cocok untuk hadiah dan koleksi. Ukuran 5x5 cm dan tersedia berbagai karakter (bisa custom).
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Lanyard -->
+    <div class="modal fade" id="modalLanyard" tabindex="-1" aria-labelledby="modalLanyardLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border-radius:20px;">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLanyardLabel">Lanyard ID Card</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          </div>
+          <div class="modal-body">
+            Tali lanyard ID card, bahan polyester kuat & nyaman, lebar 2 cm, dan panjang 35-40cm. Tersedia berbagai design. Bisa custom desain dengan berbagai tema.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Keylanyard -->
+    <div class="modal fade" id="modalKeylanyard" tabindex="-1" aria-labelledby="modalKeylanyardLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border-radius:20px;">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalKeylanyardLabel">Lanyard Keychain</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          </div>
+          <div class="modal-body">
+            Lanyard pendek untuk gantungan kunci, bahan tebal & awet, panjang 10 cm. Tersedua berbagai desain. Bisa custom sesuai keinginan!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tentang Kami -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Tentang Kami</h2>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 text-center">
+                    <p class="about-intro" data-aos="fade-up" data-aos-delay="100">
+                        Merch Store adalah toko merchandise yang berdiri sejak 2023. Kami menyediakan berbagai merchandise dengan original maupun non original art dan harga terjangkau. Kepuasan pelanggan adalah prioritas utama kami!
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div class="row mt-5 pt-4">
+                <div class="col-lg-12 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Desainer</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Desain Original</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Tahun Beroperasi</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Garansi Kepuasan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="projects-section">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Produk Unggulan</h2>
+            <p class="text-center mb-5 projects-intro" data-aos="fade-up" data-aos-delay="100" style="color: var(--accent-color);">
+                Pilihan merchandise terbaik, siap melengkapi gaya kamu!
+            </p>
+            <div class="row">
+                <!-- Produk 1: Stiker -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="stiker.jpg" alt="Stiker" style="width:100%;height:180px;object-fit:cover;border-radius:20px 20px 0 0;">
+                        </div>
+                        <div class="project-content">
+                            <h4>Stiker Custom</h4>
+                            <div class="product-price">Rp5.000</div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Original art</span>
+                                <span class="tech-tag">Custom</span>
+                            </div>
+                            <div class="mt-3 d-flex gap-2">
+                                <a href="https://wa.me/62895339282253?text=Halo%20saya%20mau%20order%20Stiker%20Custom" target="_blank" class="btn-custom btn-primary-custom w-100" style="text-align: center;">Beli Sekarang</a>
+                                <button type="button" class="btn-custom btn-secondary-custom w-100" data-bs-toggle="modal" data-bs-target="#modalStiker">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 2: Acrylic Keychain -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="ganci.jpg" alt="Acrylic Keychain" style="width:100%;height:180px;object-fit:cover;border-radius:20px 20px 0 0;">
+                        </div>
+                        <div class="project-content">
+                            <h4>Acrylic Keychain</h4>
+                            <div class="product-price">Rp15.000</div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Original art</span>
+                                <span class="tech-tag">Custom</span>
+                            </div>
+                            <div class="mt-3 d-flex gap-2">
+                                <a href="https://wa.me/62895339282253?text=Halo%20saya%20mau%20order%20Acrylic%20Keychain" target="_blank" class="btn-custom btn-primary-custom w-100" style="text-align: center;">Beli Sekarang</a>
+                                <button type="button" class="btn-custom btn-secondary-custom w-100" data-bs-toggle="modal" data-bs-target="#modalGanci">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 3: Lanyard ID Card -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="lanyard.jpg" alt="Lanyard ID Card" style="width:100%;height:180px;object-fit:cover;border-radius:20px 20px 0 0;">
+                        </div>
+                        <div class="project-content">
+                            <h4>Lanyard ID Card</h4>
+                            <div class="product-price">Rp20.000</div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Original design</span>
+                                <span class="tech-tag">Custom design</span>
+                            </div>
+                            <div class="mt-3 d-flex gap-2">
+                                <a href="https://wa.me/62895339282253?text=Halo%20saya%20mau%20order%20Lanyard%20ID%20Card" target="_blank" class="btn-custom btn-primary-custom w-100" style="text-align: center;">Beli Sekarang</a>
+                                <button type="button" class="btn-custom btn-secondary-custom w-100" data-bs-toggle="modal" data-bs-target="#modalLanyard">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 4: Lanyard Keychain -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="keylanyard.jpg" alt="Lanyard Keychain" style="width:100%;height:180px;object-fit:cover;border-radius:20px 20px 0 0;">
+                        </div>
+                        <div class="project-content">
+                            <h4>Lanyard Keychain</h4>
+                            <div class="product-price">Rp15.000</div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Original design</span>
+                                <span class="tech-tag">Custom design</span>
+                            </div>
+                            <div class="mt-3 d-flex gap-2">
+                                <a href="https://wa.me/62895339282253?text=Halo%20saya%20mau%20order%20Lanyard%20Keychain" target="_blank" class="btn-custom btn-primary-custom w-100" style="text-align: center;">Beli Sekarang</a>
+                                <button type="button" class="btn-custom btn-secondary-custom w-100" data-bs-toggle="modal" data-bs-target="#modalKeylanyard">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Section -->
+    <section id="testimoni" class="testimonial-section">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Testimoni Pelanggan</h2>
+            <div class="testimonial-slider" data-aos="fade-up" data-aos-delay="100">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">"Barangnya bagus, pengiriman cepat, admin ramah. Pasti order lagi!"</div>
+                    <div class="testimonial-name">- Rina, Jakarta</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">"Kaosnya nyaman banget dipakai, desainnya keren. Recommended!"</div>
+                    <div class="testimonial-name">- Dimas, Bandung</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">"Hoodie tebal dan hangat, sesuai deskripsi. Packing rapi."</div>
+                    <div class="testimonial-name">- Sari, Surabaya</div>
+                </div>
+                <!-- Tambah testimoni lain jika perlu -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="contact-section">
+    <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">Hubungi Kami</h2>
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+                <p class="contact-intro" data-aos="fade-up" data-aos-delay="100">
+                    Ingin order atau ada pertanyaan? Hubungi kami melalui info di bawah atau chat langsung via WhatsApp!
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Info Kontak</h3>
+                    <div class="contact-item justify-content-center">
+                        <div class="contact-details">
+                            <h5>Email</h5>
+                            <p>merchstore@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item justify-content-center">
+                        <div class="contact-details">
+                            <h5>WhatsApp</h5>
+                            <p>+62 895 3392 8225 3</p>
+                        </div>
+                    </div>
+                    <div class="contact-item justify-content-center">
+                        <div class="contact-details">
+                            <h5>Alamat</h5>
+                            <p>Yogyakarta, DIY, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-social mt-4">
+                        <h5>Follow Kami</h5>
+                        <div class="social-links-contact d-flex justify-content-center gap-3 mt-2">
+                            <a href="https://instagram.com/cyan.7z" target="_blank" class="social-link-contact"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/62895339282253" target="_blank" class="social-link-contact"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://shopee.co.id/" target="_blank" class="social-link-contact"><i class="fas fa-store"></i></a>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="https://wa.me/62895339282253" target="_blank" class="btn-custom btn-secondary-custom">
+                            <i class="fab fa-whatsapp me-2"></i>Chat WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 mb-5">
+                    <div class="footer-brand-section">
+                        <div class="footer-brand">
+                            <h3 class="footer-logo">Merch Store</h3>
+                            <p class="footer-tagline">Toko Merchandise Keren</p>
+                        </div>
+                        <p class="footer-text">
+                            Merch Store menyediakan berbagai merchandise dengan original maupun non original, kualitas premium, dan harga terjangkau. Belanja mudah, aman, dan terpercaya!
+                        </p>
+                        <div class="footer-achievements">
+                            <div class="achievement-item">
+                                <span class="achievement-number">2+</span>
+                                <span class="achievement-label">Tahun Beroperasi</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-number">10+</span>
+                                <span class="achievement-label">Desain Original</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-number">10+</span>
+                                <span class="achievement-label">Pelanggan Puas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Navigasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#produk">Produk</a></li>
+                        <li><a href="#testimoni">Testimoni</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Kategori</h5>
+                    <ul class="footer-links">
+                        <li>Stiker</li>
+                        <li>Keychain acrylic</li>
+                        <li>Lanyard id card</li>
+                        <li>Keychain lanyard</li>
+                        <li>Custom order</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Kontak</h5>
+                    <div class="footer-contact">
+                        <div class="contact-footer-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>merchstore@gmail.com</span>
+                        </div>
+                        <div class="contact-footer-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+62 895 3392 8225 3</span>
+                        </div>
+                        <div class="contact-footer-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Yogyakarta, DIY, Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="footer-social-section">
+                        <h6 class="social-title">Follow Kami</h6>
+                        <div class="footer-social">
+                            <a href="https://instagram.com/cyan.7z" target="_blank" class="social-link-footer" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/62895339282253" target="_blank" class="social-link-footer" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://shopee.co.id/" target="_blank" class="social-link-footer" title="Shopee"><i class="fas fa-store"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-copyright">
+                        Designed by Cyan.7z
+                    </p>
+                    <p class="footer-copyright">
+                        &copy; 2025 <span class="highlight">Merch Store</span>. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-badges">
+                        <span class="footer-badge"><i class="fas fa-truck"></i> Pengiriman Cepat</span>
+                        <span class="footer-badge"><i class="fas fa-shield-alt"></i> Belanja Aman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src=script.js></script>
+    
+</body>
+</html>
